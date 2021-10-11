@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    background: yellow;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    flex-wrap:wrap;
+    .col{
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        width:30%;
+        background: red;
+        border:black;
+        height:150px;
+        @media screen and (max-width:767px){
+            background: blue;
+            width:45%;
+        }
+        @media screen and (max-width:424px){
+            background: blue;
+            width:75%;
+        }
+    }
+}
+
